@@ -48,7 +48,17 @@ public class Lemonade {
 
     // Create a method called mix that takes two Lemonade objects and returns a new Lemonade object with
     // the sum of the lemons, sugar, and ice from the two Lemonade objects.
-    //
     // HINT: You can get the counts from the two Lemonade objects using their get methods, e.g.:
     // int newLemonadeLemons = lemonade1.getLemons() + lemonade2.getLemons();
+    public static Lemonade mix(Lemonade obj1, Lemonade obj2){
+        Lemonade obj = new Lemonade();
+        obj.setLemons(obj1.getLemons()+ obj2.getLemons());
+        obj.setSugar(obj1.getSugar()+obj2.getSugar());
+        obj.setIce(obj1.getIce()+obj2.getIce());
+        return obj;
+
+    }
+
+
+
 }
